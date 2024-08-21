@@ -1,13 +1,26 @@
 import Image from "next/image";
 
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
+    <>
+
+      <header className="bg-white shadow-md">
+        <div className="container mx-auto flex items-center justify-between p-4">
+          <div className="logo text-clifford text-2xl font-bold">
+            <Image
+              src="images/Concordian Logo - Final.svg"
+              alt="logo"
+              width={100}
+              height={24}
+              priority
+            />
+          </div>
+        </div>
+      </header>
+      <main className="">
+        {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+     
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -37,77 +50,48 @@ export default function Home() {
           height={37}
           priority
         />
-      </div>
+      </div> */}
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <section className="bg-cover bg-hero-1 bg-center bg-green-50 w-screen h-screen">
+          <div className=" bg-opacity-50 h-full flex items-center justify-center">
+            <div className=" bg-gray-200 rounded text-center text-white p-8 max-w-2xl">
+              <h1 className="text-4xl font-display md:text-6xl text-black font-bold mb-4"><span className="text-green-500">We&apos;</span>re Coming Soon</h1>
+              <p className="text-lg font-nunito text-black md:text-xl mb-8">Powering the future with cutting-edge electrical appliances—coming soon to revolutionize your home.</p>
+            </div>
+          </div>
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      </main>
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex items-center">
+            <Image
+              src="/images/Concordian Logo - Final - wht.svg"
+              alt="logo"
+              width={200}
+              height={200}
+              priority
+            />
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          {/* Contact Information Column */}
+          <div className="space-y-4 font-nunito">
+            <p className=" text-base md:text-lg">
+              <span className="text-lg md:text-xl font-bold">Address:</span> Concordian Power Private Limited, 2nd Floor, Emirates Tower, M-13, F-7 Markaz, Islamabad, Pakistan.
+            </p>
+
+            <p className=" text-base md:text-lg">
+              <span className="text-lg md:text-xl font-bold">Contact:</span> +92 51 209 9296 Ext: 9296
+            </p>
+
+            <p className=" text-base md:text-lg">
+              <span className="text-lg md:text-xl font-bold">Email:</span> info@concordianpower.com
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    </>
   );
 }

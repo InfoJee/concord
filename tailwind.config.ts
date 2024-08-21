@@ -12,6 +12,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-1": "url('/images/electrical-shielded-cable-with-many-wires-generative-al.jpg')",
+
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-roboto-mono)'],
+        display: ['var(--font-saira-stencil-one)'],
+        nunito: ['var(--font-nunito)'],
       },
     },
   },
